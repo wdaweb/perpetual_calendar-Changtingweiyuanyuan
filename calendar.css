@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+
+
+
+
+body{
+    padding:0px;
+    margin:0px;
+    background-image:url('calendar_v3.jpg');
+    width:100%;
+    height:0;
+    padding-bottom:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow:hidden;
+    font-weight: bolder;
+    font-family: 'Play', sans-serif;
+}
+
+
+#bigdate{
+    padding-top:15vh;
+    font-family: 'Black Ops One', cursive;
+    font-size:60px;
+    line-height:60px;
+    text-align:right;
+    color:#F2E205;
+}
+
+.todayis{
+    color:#F2E205;
+}
+
+
+.aside{
+    display:block;
+    color:#1D1D1D;
+    position:absolute;
+    right:5px;
+    top:5vh;
+}
+
+.asideli{
+    display:block;
+    list-style-type:disc;
+    font-family: 'Play', sans-serif;
+    font-size:20px;
+    text-align:center;
+    margin-top:10px;
+    margin-right:10px;
+    padding:5px;
+    line-height: 50px;
+    /* background-color: #34556A; */
+}
+
+.li1{
+    background-image:url('asideblue.gif');
+    background-repeat:no-repeat;
+    background-size:120px,50px;
+    background-position: center;
+}
+
+.li2{
+    background-image:url('asidered.gif');
+    background-repeat:no-repeat;
+    background-size:120px,50px;
+    background-position: center;
+}
+
+.li3{
+    background-image:url('asideblue2.gif');
+    background-repeat:no-repeat;
+    background-size:120px,50px;
+    background-position: center;
+}
+
+
+
+a:link{
+    color:#1D1D1D;
+}
+
+a:visited{
+    color:#1D1D1D;
+}
+a:active{
+    color:#1D1D1D;
+}
+
+/* @media (min-width:768px){.table{width:600px;}} */
+
+table{
+    border:1px solid #34556A;
+    box-shadow: 0px 0px 10px #34556A;
+}
+
+table tr:first-child{
+    border-top:1px solid #34556A;
+    box-shadow: 0px 1px 10px #34556A;
+}
+
+
+
+.week{
+    color:#fff;
+    font-weight:bolder;
+    background-color:#393939;
+    opacity:80%;
+}
+.week:hover{
+    color:#eee;
+}
+
+table  td {
+    text-align:center;
+    padding:10px 0;
+    font-size:20px;
+    color:#eee;
+    
+}
+.nottoday:hover{
+    color:#eee;
+    background-size:50px 50px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-image:url('dogpaw.gif');
+    
+    
+}
+
+#today{
+    color:#F2E205;
+}
+
+#today:hover{
+    opacity: 100%;
+    background:none;
+    font-weight:bolder;
+    color:#F2E205;
+    background-size:50px 50px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-image:url('dogpaw.gif');
+}
+
+.lefttext{
+    display:fixed;
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    color:#1D1D1D;
+    font-family: 'Black Ops One', cursive;
+    font-size:30px;
+    line-height:30px;
+    writing-mode: vertical-rl;
+}
+
+/* .boo{
+    position: absolute;
+    bottom:-80px;
+    right:25px;
+    z-index:-1;
+} */
+
+.qq{
+    position: absolute;
+    bottom:-80px;
+    right:-2px;
+    /* top:5px;
+    left:5px; */
+    transform:rotate(0deg);
+    z-index:-1;
+}
+
