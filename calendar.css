@@ -101,26 +101,26 @@ a:active{
 /* @media (min-width:768px){.table{width:600px;}} */
 
 table{
-    box-shadow: 0px 0px 70px #34556A;
-    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 20px #F2E205;
+    border-radius: 10px ;
 }
 
 
 .week_tr td:first-child{
-    border-radius: 20px 0 0 0;
+    border-radius: 10px 0 0 0;
 }
 .week_tr td:last-child{
-    border-radius: 0 20px 0 0;
+    border-radius: 0 10px 0 0;
 }
 /* #6BB0DB淺藍  #5B96BA深藍 */
 .week{
-    color:#6BB0DB;
+    color:#F2E205;
     font-weight:bolder;
     background-color:#393939;
     opacity:80%;
 }
 .week:hover{
-    color:#6BB0DB;
+    color:#F2E205;
 }
 
 table td {
