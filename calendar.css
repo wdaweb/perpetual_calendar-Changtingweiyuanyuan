@@ -101,14 +101,15 @@ a:active{
 /* @media (min-width:768px){.table{width:600px;}} */
 
 table{
-    border:1px solid #34556A;
+    border:5px solid #34556A;
     box-shadow: 0px 0px 30px #34556A;
+    border-radius: 30px;
 }
 
 
 table tr:first-child{
     border-top:1px solid #34556A;
-    box-shadow: 0px 1px 10px #34556A;
+    /* box-shadow: 0px 1px 10px #34556A; */
     
 }
 
