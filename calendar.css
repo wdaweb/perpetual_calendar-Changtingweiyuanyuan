@@ -101,19 +101,17 @@ a:active{
 /* @media (min-width:768px){.table{width:600px;}} */
 
 table{
-    border:5px solid #34556A;
-    box-shadow: 0px 0px 30px #34556A;
-    border-radius: 30px;
+    box-shadow: 0px 0px 70px #34556A;
+    border-radius: 20px 20px 20px 20px;
 }
 
 
-table tr:first-child{
-    border-top:1px solid #34556A;
-    /* box-shadow: 0px 1px 10px #34556A; */
-    
+.week_tr td:first-child{
+    border-radius: 20px 0 0 0;
 }
-
-
+.week_tr td:last-child{
+    border-radius: 0 20px 0 0;
+}
 /* #6BB0DB淺藍  #5B96BA深藍 */
 .week{
     color:#6BB0DB;
@@ -130,15 +128,18 @@ table td {
     padding:15px 0;
     font-size:20px;
     color:#eee;
-    
 }
+
+table td:empty{
+    visibility: hidden;
+}
+
 .nottoday:hover{
     color:#eee;
     background-size:50px 50px;
     background-position:center;
     background-repeat:no-repeat;
     background-image:url('dogpaw.gif');
-    
     
 }
 

@@ -88,7 +88,7 @@ $monthDays=date('t',$startDay);
 
 
     <table class="offset-3 col-7 offset-2">
-        <tr>
+        <tr class="week_tr">
             <!-- 禮拜日到禮拜六 -->
 <?php
 // echo date('2020-11-0'.(1+$j));
@@ -139,9 +139,9 @@ for($i=0; $i<6;$i++){
             else{echo '<td class="nottoday">';}
 
                 if($i==0 && $j<$startDay){
-                    echo "&nbsp;";
+                    // echo "&nbsp;";
                 }else if((($i*7) + ($j+1) - $startDay)>$monthDays){
-                    echo "&nbsp;";
+                    // echo "&nbsp;";
                 }else{
                     echo (($i*7) + ($j+1) - $startDay);}
                 
