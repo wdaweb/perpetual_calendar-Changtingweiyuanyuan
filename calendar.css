@@ -28,8 +28,8 @@ width:1100px;
     font-family: 'Big Shoulders Inline Text', cursive;
     
     font-size:70px;
-    line-height:60px;
-    text-align:right;
+    line-height:65px;
+    text-align:center;
     color:#F2E205;
 }
 
@@ -102,7 +102,7 @@ a:active{
 
 table{
     border:1px solid #34556A;
-    box-shadow: 0px 0px 10px #34556A;
+    box-shadow: 0px 0px 30px #34556A;
 }
 
 
