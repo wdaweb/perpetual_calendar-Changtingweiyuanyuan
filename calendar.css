@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&display=swap');
 
 
 
@@ -18,12 +18,16 @@ body{
     font-weight: bolder;
     font-family: 'Play', sans-serif;
 }
-
+.center_content{
+width:1100px;
+}
 
 #bigdate{
     padding-top:15vh;
-    font-family: 'Black Ops One', cursive;
-    font-size:60px;
+    /* font-family: 'Black Ops One', cursive; */
+    font-family: 'Big Shoulders Inline Text', cursive;
+    
+    font-size:70px;
     line-height:60px;
     text-align:right;
     color:#F2E205;
@@ -48,11 +52,11 @@ body{
     font-family: 'Play', sans-serif;
     font-size:20px;
     text-align:center;
-    margin-top:10px;
-    margin-right:10px;
+    width:150px;
+    height:70px;
     padding:5px;
+    padding-top:7px;
     line-height: 50px;
-    /* background-color: #34556A; */
 }
 
 .li1{
@@ -76,17 +80,22 @@ body{
     background-position: center;
 }
 
+a:hover{
+    text-decoration: none;
+    color:#ddd;
+    font-size:25px;
+}
 
-
+/* #e08122  #c7ba05  深紅#730202  黃色深紅中間色#9d4d03 */
 a:link{
-    color:#1D1D1D;
+    color:#ddd;
 }
 
 a:visited{
-    color:#1D1D1D;
+    color:#ddd;
 }
 a:active{
-    color:#1D1D1D;
+    color:#ddd;
 }
 
 /* @media (min-width:768px){.table{width:600px;}} */
@@ -96,26 +105,28 @@ table{
     box-shadow: 0px 0px 10px #34556A;
 }
 
+
 table tr:first-child{
     border-top:1px solid #34556A;
     box-shadow: 0px 1px 10px #34556A;
+    
 }
 
 
-
+/* #6BB0DB淺藍  #5B96BA深藍 */
 .week{
-    color:#fff;
+    color:#6BB0DB;
     font-weight:bolder;
     background-color:#393939;
     opacity:80%;
 }
 .week:hover{
-    color:#eee;
+    color:#6BB0DB;
 }
 
-table  td {
+table td {
     text-align:center;
-    padding:10px 0;
+    padding:15px 0;
     font-size:20px;
     color:#eee;
     
@@ -148,23 +159,37 @@ table  td {
 .lefttext{
     display:fixed;
     position:absolute;
-    left:0px;
-    bottom:0px;
+    left:45px;
+    /* bottom:10px; */
     color:#1D1D1D;
     font-family: 'Black Ops One', cursive;
     font-size:30px;
     line-height:30px;
-    writing-mode: vertical-rl;
+    
 }
 
-/* .boo{
-    position: absolute;
-    bottom:-80px;
-    right:25px;
-    z-index:-1;
-} */
+.l1{
+    bottom:70px;
+}
 
-.qq{
+.lefttext2{
+    left:8px;
+    font-size:50px;
+    bottom:75px;
+}
+
+.l2{
+    bottom:40px;
+    left:10px;
+}
+
+.l3{
+    bottom:10px;
+    left:10px;
+}
+
+
+.qq_block{
     position: absolute;
     bottom:-80px;
     right:-2px;
@@ -172,5 +197,13 @@ table  td {
     left:5px; */
     transform:rotate(0deg);
     z-index:-1;
+}
+
+
+
+@media(max-width:768px){
+    .bigdate{
+        font-size:50px;
+    }
 }
 

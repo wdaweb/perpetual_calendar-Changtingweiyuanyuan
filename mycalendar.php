@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my calendar</title>
+    <title>－CALENDAR－</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="calendar.css">
 </head>
@@ -36,9 +36,6 @@
 
 
 
-
-
-
 <!-- 寫法2.三元運算式 -->
 
 <?php
@@ -52,11 +49,6 @@ else{$preMonth=$thisMonth-1;$preYear=$thisYear;}
 ?>
 
 
-<section id="bigdate">
-            <div>
-                <p class="offset-3 col-7 offset-2">TODAY IS<br><?=date('Y-m-d')?><br><?=date('l')?></p>
-            </div>
-</section>
 
 
 <!-- 上下個月 -->
@@ -69,6 +61,15 @@ else{$preMonth=$thisMonth-1;$preYear=$thisYear;}
     </ul>
 </div>
 
+
+
+<div class="container center_content">
+<section id="bigdate">
+            <div class="bigdate">
+                <p class="offset-3 col-7 offset-2"><?=date('Y-m-d')?><br><?=date('l')?></p>
+            </div>
+</section>
+
 <?php
 $startDay=date('w',strtotime($thisYear."-".$thisMonth."-".'01'));
 $monthDays=date('t',$startDay);
@@ -76,9 +77,9 @@ $monthDays=date('t',$startDay);
 
 
 
-<table class="offset-3 col-7 offset-2">
-    <tr>
-<!-- 禮拜日到禮拜六 -->
+    <table class="offset-3 col-7 offset-2">
+        <tr>
+            <!-- 禮拜日到禮拜六 -->
 <?php
 // echo date('2020-11-0'.(1+$j));
 for($i=0;$i<7;$i++){
@@ -141,18 +142,21 @@ for($i=0; $i<6;$i++){
 }
 
 ?>
-</table>
+</table></div>
 
 
 
 
 
-<div>
-    <p class="lefttext">CALENDAR</p>
-</div>
+<!-- <div>
+    <span class="lefttext lefttext2 l1">D</span>
+    <span class="lefttext l1">o what's right</span><br>
+    <span class="lefttext l2">the right way</span>
+    <span class="lefttext l3">at the right time.</span>
+</div> -->
 
 
-<div class="qq">
+<div class="qq_block">
     <img src="qq.gif" width="400" height="400">
 </div>
 
