@@ -11,7 +11,7 @@
 
 <body>
 
-
+<!-- <div class="bg"></div> -->
 
 <!-- 特殊節日二維陣列 -->
 
@@ -73,7 +73,7 @@ else{$preMonth=$thisMonth-1;$preYear=$thisYear;}
 
 
 
-<div class="container center_content">
+<div class="container">
 <section id="bigdate">
             <div class="bigdate">
                 <p class="offset-3 col-7 offset-2"><?=date('Y-m-d')?><br><?=date('l')?></p>
@@ -87,7 +87,7 @@ $monthDays=date('t',$startDay);
 
 
 
-    <table class="offset-3 col-7 offset-2">
+    <table class="col-7 mx-auto">
         <tr class="week_tr">
             <!-- 禮拜日到禮拜六 -->
 <?php
