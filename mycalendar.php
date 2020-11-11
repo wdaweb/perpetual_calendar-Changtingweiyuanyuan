@@ -75,9 +75,9 @@ else{$preMonth=$thisMonth-1;$preYear=$thisYear;}
 
 <div class="container">
 <section id="bigdate">
-            <div class="bigdate">
-                <p class="offset-3 col-7 offset-2"><?=date('Y-m-d')?><br><?=date('l')?></p>
-            </div>
+    <div class="bigdate">
+        <p class="mx-auto"><?=date('Y-m-d')?><br><?=date('l')?></p>
+    </div>
 </section>
 
 <?php
@@ -87,9 +87,9 @@ $monthDays=date('t',$startDay);
 
 
 
-    <table class="col-7 mx-auto">
-        <tr class="week_tr">
-            <!-- 禮拜日到禮拜六 -->
+<table class="col-7 mx-auto">
+<tr class="week_tr">
+<!-- 禮拜日到禮拜六 -->
 <?php
 // echo date('2020-11-0'.(1+$j));
 for($i=0;$i<7;$i++){
@@ -105,28 +105,6 @@ echo '<br>';
 
 <!-- 第一天到最後一天 -->
 <?php
-
-// for($i=0; $i<6;$i++){
-//     echo "<tr>";
-//     for($j=0;$j<7;$j++){
-
-//             // change today's color
-//             $today=($i*7)+($j+1)-$startDay;
-//             if(date('d') == $today){echo '<td id="today">';}
-//             else{echo '<td class="nottoday">';}
-
-//                 if($i==0 && $j<$startDay){
-//                     echo "&nbsp;";
-//                 }else if((($i*7) + ($j+1) - $startDay)>$monthDays){
-//                     echo "&nbsp;";
-//                 }else{
-//                     echo (($i*7) + ($j+1) - $startDay);
-//                 }
-            
-//             echo "</td>";
-//         }
-//     echo "</tr>";
-// }
 
 
 for($i=0; $i<6;$i++){
@@ -155,15 +133,6 @@ for($i=0; $i<6;$i++){
 </table></div>
 
 
-
-
-
-<!-- <div>
-    <span class="lefttext lefttext2 l1">D</span>
-    <span class="lefttext l1">o what's right</span><br>
-    <span class="lefttext l2">the right way</span>
-    <span class="lefttext l3">at the right time.</span>
-</div> -->
 
 
 <div class="qq_block">

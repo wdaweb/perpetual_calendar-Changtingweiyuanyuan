@@ -7,11 +7,11 @@
 body{
     padding:0px;
     margin:0px;
-    background-image:url('calendar_v3.jpg');
+    background-image:url('calendar_v4.png');
     background-position:center;
     background-repeat:no-repeat;
     background-attachment: fixed;
-    background-size:135% 100%;
+    background-size:cover;
     height:100vh;
     /* padding-bottom:100%;
     background-position: center;
@@ -28,7 +28,6 @@ body{
     padding-top:15vh;
     /* font-family: 'Black Ops One', cursive; */
     font-family: 'Big Shoulders Inline Text', cursive;
-    
     font-size:70px;
     line-height:65px;
     text-align:center;
@@ -44,8 +43,8 @@ body{
     display:block;
     color:#1D1D1D;
     position:absolute;
-    right:5px;
-    top:5vh;
+    right:17%;
+    top:35vh;
 }
 
 .asideli{
@@ -160,43 +159,10 @@ table td:empty{
     background-image:url('dogpaw.gif');
 }
 
-.lefttext{
-    display:fixed;
-    position:absolute;
-    left:45px;
-    /* bottom:10px; */
-    color:#1D1D1D;
-    font-family: 'Black Ops One', cursive;
-    font-size:30px;
-    line-height:30px;
-    
-}
-
-.l1{
-    bottom:70px;
-}
-
-.lefttext2{
-    left:8px;
-    font-size:50px;
-    bottom:75px;
-}
-
-.l2{
-    bottom:40px;
-    left:10px;
-}
-
-.l3{
-    bottom:10px;
-    left:10px;
-}
-
-
 .qq_block{
     position: absolute;
     bottom:-80px;
-    right:-2px;
+    right:-5px;
     /* top:5px;
     left:5px; */
     transform:rotate(0deg);
@@ -204,15 +170,53 @@ table td:empty{
 }
 
 
+@media(max-width:1400px){
+    .aside{
+        right:14%;
+    }
+}
+@media(max-width:1280px){
+    .aside{
+        right:10%;
+    }
+}
 
-@media(max-width:768px){
+@media(max-width:1050px){
+        .asideli{
+        font-size:18px;
+        text-align:center;
+        width:120px;
+        height:50px;
+        padding:5px;
+        padding-top:5px;
+        line-height: 30px;
+    }
+    .li1,.li2,.li3{
+        background-size:100px,30px;
+    }
+    a:hover{
+        font-size:22px;
+    }
+    .aside{
+        right:10%;
+    }
+}
+
+@media(max-width:800px){
     .bigdate{
         font-size:50px;
     }
-}
-@media(max-width:540px){
-    .bigdate{
-        font-size:35px;
+    .aside{
+        right:5%;
     }
 }
-
+@media(max-width:600px){
+    .aside{
+        display:none;
+    }
+}
+@media(max-width:500px){
+    .bigdate{
+        font-size:40px;
+    }
+}
